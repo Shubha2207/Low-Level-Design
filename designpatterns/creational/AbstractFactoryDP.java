@@ -44,7 +44,7 @@ class Mac implements Computer {
 /**
  * Create Abstract factory for these two products
  */
-interface ComputerAbstractFactory{
+interface ComputerAbstractFactory {
     Computer getComputer();
 }
 
@@ -68,7 +68,7 @@ class MacFactory implements ComputerAbstractFactory {
  * Create factory class to create these products
  */
 class ComputerFactory {
-    public static Computer getComputer(ComputerAbstractFactory computerAbstractFactory){
+    public static Computer getComputer(ComputerAbstractFactory computerAbstractFactory) {
         return computerAbstractFactory.getComputer();
     }
 }

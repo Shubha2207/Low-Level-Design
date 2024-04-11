@@ -1,7 +1,5 @@
 package designpatterns.creational;
 
-import solidPrinciples.s.S;
-
 /**
  * create an object of class based on some condition
  */
@@ -31,8 +29,8 @@ public class FactoryDP {
 }
 
 class ShapeFactory {
-    Shape getShape(String shape){
-        switch (shape){
+    Shape getShape(String shape) {
+        switch (shape) {
             case "Circle":
                 return new Circle();
             case "Square":
