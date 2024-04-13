@@ -31,6 +31,26 @@ Java design patterns are divided into three categories - creational, structural,
 ### Creational Design Patterns<a name="subparagraph1"></a>
 Creational design patterns provide solutions to instantiate an Object in the best possible way for specific situations.
 
+#### Types of Creational Design Patterns
+
+1. Factory
+    1. Used to create object based on some conditions
+2. Abstract Factory
+    1. Factory of factories
+    2. Get rid of if-else or switch-case
+3. Singleton
+    1. Used to make sure only one object is created for a class
+    2. Ways to achieve singleton patter:
+       1. Eager Initialization
+       2. Lazy Initialization
+       3. Synchronized method
+       4. Double Locking {*recommended because it's thread-safe and performant*}
+4. Prototype
+    1. Used to make clone/copy of existing object
+5. Builder
+    1. Step-By-Step object creation
+    2. Used if class has a lot of optional fields
+
 ### Structural Design Patterns<a name="subparagraph2"></a>
 Structural design patterns provide different ways to create a Class structure (for example, using inheritance and composition to create a large Object from small Objects).
 
