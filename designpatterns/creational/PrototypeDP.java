@@ -27,7 +27,7 @@ public class PrototypeDP {
         System.out.println(s1 == s2);
 
         /**
-         * this type of cloning is creating shallow copy of object
+         * this type of cloning creates shallow copy of object
          * because embedded objects within Student class will not be cloned
          * e.g.
          * Address class object in student will not be cloned
