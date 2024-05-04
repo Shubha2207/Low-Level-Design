@@ -38,6 +38,20 @@ public class ObserverDP {
         // this update will notify only virat
         batObservable.setData(30);
 
+        /**
+         * if you have already gone through Mediator design pattern,
+         * you might find observer pattern similar to mediator but actually there is a difference
+         * let's take example of each pattern to understand the difference
+         *
+         * The observer pattern: Class Product, can have zero or more observers of type CustomerClazz registered with it.
+         * When something in Product object is changed it notifies all the observers.
+         *
+         * The mediator pattern: You have some number of instances of class X (or maybe even several types:X, Y & Z),
+         * and they wish to communicate with each other (but you don't want each to have explicit references to each other),
+         * so you create a mediator class M. Each instance of X has a reference to a shared instance of M,
+         * through which it can communicate with the other instances of X (or X, Y and Z).
+         */
+
     }
 }
 
@@ -102,7 +116,8 @@ class Customer implements Observer {
     Observable observable;
 
     public void setObservable(Observable observable){
-        // if observer want to listen to another observable then existing one must unregister it
+        // if observer want to listen to another observable
+        // then existing one must unregister it
         if(Objects.nonNull(this.observable)){
             this.observable.unRegisterObserver(this);
         }

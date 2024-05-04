@@ -34,8 +34,11 @@ public class MediatorDP {
         c3.sendMessage("Bid of $125");
 
         /**
-         * so here if you see, no object is directly communicating with each other
+         * so here if you see, no object is directly communicating with each other,
          * or you can put it as no bidder knows about other bidders
+         *
+         * if you want to understand the difference between observer and mediator design pattern
+         * check the ObserverDP.java
          */
     }
 }
