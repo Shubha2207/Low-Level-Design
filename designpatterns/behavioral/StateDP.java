@@ -1,6 +1,5 @@
 package designpatterns.behavioral;
 
-import javax.swing.*;
 import java.util.*;
 
 /**
