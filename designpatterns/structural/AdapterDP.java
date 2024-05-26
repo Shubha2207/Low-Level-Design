@@ -1,5 +1,7 @@
 package designpatterns.structural;
 
+import java.util.Arrays;
+
 /**
  * Used to work with existing system, which returns some result that needs to be
  * refined so that client can use it.
@@ -15,6 +17,7 @@ public class AdapterDP {
         // hence adding layer of adapter, which will convert the data in required format
         TemperatureAdapter temperatureAdapter = new TemperatureAdapterImpl();
         System.out.println(temperatureAdapter.requestTemperature() + " Celsius");
+
     }
 }
 
