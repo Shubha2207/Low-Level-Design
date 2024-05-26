@@ -6,7 +6,7 @@ package designpatterns.structural;
  */
 public class BridgeDP {
     /**
-     * Ex. we have Shape abstract class, for which we need apply color for each shape
+     * Ex. we have Shape abstract class, for which we need to apply color for each shape
      * both Shape and Color can have different hierarchies e.g. Shape -> Circle|Square|Triangle and
      * Color -> Red|Green etc.
      * So to avoid the hard dependency, we use bridge design patten
