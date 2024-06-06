@@ -63,32 +63,35 @@ class DBFacade {
             case "MySql":
                 MySqlDriver mySqlDriver;
                 switch (reportType) {
-                    case "HTML":
+                    case "HTML" -> {
                         mySqlDriver = new MySqlDriver();
                         mySqlDriver.connectToMySqlDB();
                         mySqlDriver.generateHtmlReport(dbName, tableName);
-                        break;
-                    case "PDF":
+                    }
+                    case "PDF" -> {
                         mySqlDriver = new MySqlDriver();
                         mySqlDriver.connectToMySqlDB();
                         mySqlDriver.generatePdfReport(dbName, tableName);
-                        break;
-                    case "Oracle":
-                        OracleDriver oracleDriver;
-                        switch (reportType) {
-                            case "HTML":
-                                oracleDriver = new OracleDriver();
-                                oracleDriver.connectToOracleDB();
-                                oracleDriver.generateHtmlReport(dbName, tableName);
-                                break;
-                            case "PDF":
-                                oracleDriver = new OracleDriver();
-                                oracleDriver.connectToOracleDB();
-                                oracleDriver.generatePdfReport(dbName, tableName);
-                                break;
-
-                        }
+                    }
                 }
+            case "Oracle":
+                OracleDriver oracleDriver;
+                switch (reportType) {
+                    case "HTML" -> {
+                        oracleDriver = new OracleDriver();
+                        oracleDriver.connectToOracleDB();
+                        oracleDriver.generateHtmlReport(dbName, tableName);
+                    }
+                    case "PDF" -> {
+                        oracleDriver = new OracleDriver();
+                        oracleDriver.connectToOracleDB();
+                        oracleDriver.generatePdfReport(dbName, tableName);
+                    }
+                }
+                break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + dbType);
         }
     }
+
 }
