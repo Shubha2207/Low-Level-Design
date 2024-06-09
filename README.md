@@ -26,7 +26,12 @@ A well-described solution to a common software problem.
 
 Java design patterns are divided into three categories - creational, structural, and behavioral design patterns.
 
-[Learn More](https://www.digitalocean.com/community/tutorials/java-design-patterns-example-tutorial)
+[Learn More](#design-patterns-a-nameparagraph2-a)
+
+[DigitalOcean Blogs](https://www.digitalocean.com/community/tutorials/java-design-patterns-example-tutorial)
+
+[Source Making Blogs](https://sourcemaking.com/design_patterns/creational_patterns)
+
 
 ### Creational Design Patterns<a name="subparagraph1"></a>
 Creational design patterns provide solutions to instantiate an Object in the best possible way for specific situations.
